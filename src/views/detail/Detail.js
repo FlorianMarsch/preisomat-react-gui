@@ -86,8 +86,8 @@ class Detail extends React.Component {
         let tabbar = (<Tabs
             value={this.props.match.params.tab}
             onChange={this.handleTabChange}
-            indicatorColor="primary"
-            textColor="primary"
+            indicatorColor="secondary"
+            textColor="secondary"
             centered
         >
 
@@ -155,9 +155,9 @@ class Detail extends React.Component {
 
                             <Switch>
                                 <Route exact path='/costcentre/:costId/cost' render={routeProps => {
-                                    return <Cost costCentre={costCentre} tabChanged={(tab)=>{
-                                        this.setState({...this.state, activeTab:tab});
-                                    }}/>;
+                                    return <Cost costCentre={costCentre} tabChanged={(tab) => {
+                                        this.setState({ ...this.state, activeTab: tab });
+                                    }} />;
                                 }} />
                                 <Route exact path='/costcentre/:costId/calculation' render={routeProps => {
                                     return <Calculation costCentre={costCentre} />;

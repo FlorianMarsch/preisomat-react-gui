@@ -86,7 +86,7 @@ class PanelItem extends React.Component {
             <ExpansionPanelActions key={4}>
                 <Link
                     to={'./edit-' + cost.id}>
-                    <Button size="small" color="primary" onClick={() => { tabChanged('edit') }}>
+                    <Button size="small" color="secondary" onClick={() => { tabChanged('edit') }}>
                         ändern
                     </Button>
                 </Link>
